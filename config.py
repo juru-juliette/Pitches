@@ -3,7 +3,7 @@ import os
 class Config:
 
 
-    SECRET_KEY = 'SECRET_KEY'
+    SECRET_KEY = 'juru1'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://wecode:  @localhost/myapp'
 
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -11,6 +11,7 @@ class Config:
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+    UPLOADED_PHOTOS_DEST ='app/static/photos'
 class ProdConfig(Config):
     pass
 

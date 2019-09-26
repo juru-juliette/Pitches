@@ -18,7 +18,7 @@ def create_app(config_name):
 
     # Creating the app configurations
     app.config.from_object(config_options[config_name])
-    # config_options[config_name].init_app(app)
+    
 #........
     # Registering the blueprint
     from .main import main as main_blueprint
@@ -33,6 +33,6 @@ def create_app(config_name):
     login_manager.init_app(app)
     mail.init_app(app)
     # configure UploadSet
-    # configure_uploads(app,photos)
+    configure_uploads(app,photos)
   
     return app

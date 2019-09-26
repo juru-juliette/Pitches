@@ -12,5 +12,5 @@ class CommentTest(unittest.TestCase):
         '''
         self.new_comment = Comment(id =1, comment= 'I love this pitch',pitches_id=3,user_id= 2)
 
-    def test_instance(self):
-        self.assertTrue(isinstance(self.new_comment,Comment))
+    # def test_instance(self):
+    #     self.assertTrue(isinstance(self.new_comment,Comment))

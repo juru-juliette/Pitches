@@ -12,5 +12,5 @@ class PitchTest(unittest.TestCase):
         '''
         self.new_pitch = Pitch(id=6,pitch='My pitch',user_id= 2)
 
-    def test_instance(self):
-        self.assertTrue(isinstance(self.new_pitch,Pitch))
+    # def test_instance(self):
+    #     self.assertTrue(isinstance(self.new_pitch,Pitch))

@@ -1,5 +1,6 @@
 .container {
-  background-color: rgb(218, 218, 224);
+  /* background-color: rgb(218, 218, 224); */
+  background-image: url('words.jpg');
   font-family: serif;
 }
 .well{font-size:30px;

@@ -41,7 +41,6 @@ def profile(uname):
         abort(404)
 
     return render_template("profile/profile.html", user = user)
-
 @main.route('/user/<uname>/update',methods = ['GET','POST'])
 @login_required
 def update_profile(uname):
@@ -71,7 +70,7 @@ def update_pic(uname):
         user.profile_pic_path = path
         db.session.commit()
     return redirect(url_for('main.profile',uname=uname))
-
+# 
 @main.route('/new/comment/<int:id>', methods = ['GET','POST'])
 @login_required
 def add_comment(id):
