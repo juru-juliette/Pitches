@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+{%block content %}
+<div class="container">
+<h1>Categories</h1>
+  <a href="/category/pickup" class="btn btn-primary btn-lg">Pickup lines category</a>
+  <a href="/category/interview" class="btn btn-primary btn-lg">Interview pitch category</a>
+  <a href="/category/promotion" class="btn btn-primary btn-lg">Promotion category</a>
+</div>
+{%endblock%}
